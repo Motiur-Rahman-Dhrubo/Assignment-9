@@ -1,0 +1,366 @@
+[
+  {
+    "_id": "1",
+    "brand_name": "TechGizmo",
+    "rating": 4.5,
+    "description": "Leading gadgets and electronics brand.",
+    "brand_logo": "https://example.com/techgizmo-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "TG50OFF",
+        "description": "Get $50 off on orders above $500.",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $500.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "TGSHIPFREE",
+        "description": "Free shipping on all orders.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid on orders above $50.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "TGBOGO",
+        "description": "Buy one, get one free on accessories.",
+        "expiry_date": "2024-12-15",
+        "condition": "Applicable on accessories only.",
+        "coupon_type": "Combo"
+      },
+      {
+        "coupon_code": "TG10OFF",
+        "description": "Flat 10% off on all products.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "TGEXTRA5",
+        "description": "Extra 5% off on clearance items.",
+        "expiry_date": "2024-11-30",
+        "condition": "Clearance items only.",
+        "coupon_type": "Special Offer"
+      },
+      {
+        "coupon_code": "TGNEWUSER",
+        "description": "Exclusive $20 off for new users.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid for first-time purchases only.",
+        "coupon_type": "New User"
+      }
+    ],
+    "shop_Link": "https://techgizmo.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2",
+    "brand_name": "FashionHub",
+    "rating": 4.8,
+    "description": "Trendy and affordable fashion for all.",
+    "brand_logo": "https://example.com/fashionhub-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "FH20",
+        "description": "Flat 20% off on all items.",
+        "expiry_date": "2024-11-25",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "FHBULK",
+        "description": "Extra 10% off on bulk orders.",
+        "expiry_date": "2024-12-15",
+        "condition": "Applicable on orders above $300.",
+        "coupon_type": "Bulk Discount"
+      },
+      {
+        "coupon_code": "FHACCESSORY",
+        "description": "25% off on accessories.",
+        "expiry_date": "2024-12-20",
+        "condition": "Accessories only.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "FHNEW15",
+        "description": "15% off for new users.",
+        "expiry_date": "2025-01-01",
+        "condition": "First-time purchases only.",
+        "coupon_type": "New User"
+      },
+      {
+        "coupon_code": "FHFREESHIP",
+        "description": "Free shipping on all orders.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid across all items.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "FHSEASONAL",
+        "description": "Extra 30% off on winter wear.",
+        "expiry_date": "2024-12-31",
+        "condition": "Seasonal items only.",
+        "coupon_type": "Seasonal Offer"
+      }
+    ],
+    "shop_Link": "https://fashionhub.com",
+    "category": "Fashion",
+    "isSaleOn": true
+  },
+  {
+    "_id": "3",
+    "brand_name": "GourmetTreats",
+    "rating": 4.3,
+    "description": "Delicious and healthy snacks.",
+    "brand_logo": "https://example.com/gourmettreats-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "GT15OFF",
+        "description": "15% off on all gourmet snacks.",
+        "expiry_date": "2025-01-01",
+        "condition": "Valid for first-time users.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "GTBUY2",
+        "description": "Buy 2, get 1 free.",
+        "expiry_date": "2024-11-30",
+        "condition": "Applicable to select products only.",
+        "coupon_type": "Combo"
+      },
+      {
+        "coupon_code": "GTSHIPFREE",
+        "description": "Free shipping on orders above $50.",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $50.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "GTPACKDEAL",
+        "description": "Save 20% on snack packs.",
+        "expiry_date": "2024-12-20",
+        "condition": "Applies to multipacks.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "GTFRIENDS",
+        "description": "Refer a friend and both get $10 off.",
+        "expiry_date": "2025-01-01",
+        "condition": "Valid for referred users.",
+        "coupon_type": "Referral"
+      },
+      {
+        "coupon_code": "GTLOYALTY",
+        "description": "Extra 5% off for loyalty members.",
+        "expiry_date": "2025-01-01",
+        "condition": "Loyalty program users only.",
+        "coupon_type": "Loyalty Discount"
+      }
+    ],
+    "shop_Link": "https://gourmettreats.com",
+    "category": "Food",
+    "isSaleOn": false
+  },
+  {
+    "_id": "4",
+    "brand_name": "FitnessPro",
+    "rating": 4.7,
+    "description": "Your partner in fitness and wellness.",
+    "brand_logo": "https://example.com/fitnesspro-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "FP10OFF",
+        "description": "10% off on gym equipment.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid on selected items.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "FP3MONTHS",
+        "description": "Get 3 months free on annual subscriptions.",
+        "expiry_date": "2024-12-31",
+        "condition": "Applicable to new users only.",
+        "coupon_type": "Membership"
+      },
+      {
+        "coupon_code": "FPFREESHIP",
+        "description": "Free shipping on orders above $100.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of $100.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "FPBUNDLE50",
+        "description": "Save $50 on fitness bundles.",
+        "expiry_date": "2025-01-01",
+        "condition": "Bundles only.",
+        "coupon_type": "Bundle Discount"
+      },
+      {
+        "coupon_code": "FPLOYALTY",
+        "description": "Extra 5% for loyalty members.",
+        "expiry_date": "2024-12-31",
+        "condition": "Loyalty program users only.",
+        "coupon_type": "Loyalty Discount"
+      },
+      {
+        "coupon_code": "FPBLACKFRIDAY",
+        "description": "Up to 70% off on Black Friday deals.",
+        "expiry_date": "2024-11-29",
+        "condition": "Selected items only.",
+        "coupon_type": "Seasonal Offer"
+      }
+    ],
+    "shop_Link": "https://fitnesspro.com",
+    "category": "Health",
+    "isSaleOn": true
+  },
+  {
+    "_id": "5",
+    "brand_name": "BookNook",
+    "rating": 4.9,
+    "description": "Wide collection of books for all readers.",
+    "brand_logo": "https://example.com/booknook-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "BNREAD10",
+        "description": "Flat $10 off on purchases above $100.",
+        "expiry_date": "2024-12-01",
+        "condition": "Minimum purchase of $100.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "BNFREESHIP",
+        "description": "Free shipping on all book orders.",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "BNBULKBUY",
+        "description": "Buy 3 books, get 1 free.",
+        "expiry_date": "2024-12-20",
+        "condition": "Applicable to select titles only.",
+        "coupon_type": "Combo"
+      },
+      {
+        "coupon_code": "BNKIDS20",
+        "description": "20% off on kids' books.",
+        "expiry_date": "2025-01-01",
+        "condition": "Kids' books only.",
+        "coupon_type": "Category Discount"
+      },
+      {
+        "coupon_code": "BNLOYALTY",
+        "description": "Extra 5% off for loyalty program members.",
+        "expiry_date": "2025-01-01",
+        "condition": "Valid for loyalty card holders only.",
+        "coupon_type": "Loyalty Discount"
+      }
+    ],
+    "shop_Link": "https://booknook.com",
+    "category": "Books",
+    "isSaleOn": false
+  },
+  {
+    "_id": "6",
+    "brand_name": "HomeEssentials",
+    "rating": 4.6,
+    "description": "Everything you need for your home.",
+    "brand_logo": "https://example.com/homeessentials-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "HE20",
+        "description": "20% off on kitchen appliances.",
+        "expiry_date": "2024-12-15",
+        "condition": "Applies to select products only.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "HEBUNDLE",
+        "description": "Save $50 on bundle purchases.",
+        "expiry_date": "2025-01-01",
+        "condition": "Bundle must include at least 3 items.",
+        "coupon_type": "Bundle Discount"
+      },
+      {
+        "coupon_code": "HESHIPFREE",
+        "description": "Free shipping on orders over $150.",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of $150.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "HEFIRSTTIME",
+        "description": "15% off for first-time buyers.",
+        "expiry_date": "2025-01-01",
+        "condition": "First-time users only.",
+        "coupon_type": "New User"
+      },
+      {
+        "coupon_code": "HEFESTIVE",
+        "description": "25% off during festive season.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid on selected items.",
+        "coupon_type": "Seasonal Offer"
+      },
+      {
+        "coupon_code": "HELOYALTY",
+        "description": "Extra 5% off for loyalty members.",
+        "expiry_date": "2025-01-01",
+        "condition": "Loyalty members only.",
+        "coupon_type": "Loyalty Discount"
+      }
+    ],
+    "shop_Link": "https://homeessentials.com",
+    "category": "Home",
+    "isSaleOn": true
+  },
+  {
+    "_id": "7",
+    "brand_name": "UrbanTravel",
+    "rating": 4.4,
+    "description": "Reliable travel gear and accessories.",
+    "brand_logo": "https://example.com/urbantravel-logo.png",
+    "coupons": [
+      {
+        "coupon_code": "UT10OFF",
+        "description": "10% off on all travel bags.",
+        "expiry_date": "2024-12-31",
+        "condition": "Travel bags only.",
+        "coupon_type": "Discount"
+      },
+      {
+        "coupon_code": "UTSHIPFREE",
+        "description": "Free shipping on orders above $75.",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $75.",
+        "coupon_type": "Shipping"
+      },
+      {
+        "coupon_code": "UTCOMBO",
+        "description": "Buy 2 travel accessories, get 1 free.",
+        "expiry_date": "2025-01-01",
+        "condition": "Travel accessories only.",
+        "coupon_type": "Combo"
+      },
+      {
+        "coupon_code": "UTLOYALTY",
+        "description": "Extra 5% off for loyalty members.",
+        "expiry_date": "2025-01-01",
+        "condition": "Valid for loyalty members only.",
+        "coupon_type": "Loyalty Discount"
+      },
+      {
+        "coupon_code": "UTSEASONAL",
+        "description": "Up to 50% off on seasonal gear.",
+        "expiry_date": "2024-12-31",
+        "condition": "Selected items only.",
+        "coupon_type": "Seasonal Offer"
+      }
+    ],
+    "shop_Link": "https://urbantravel.com",
+    "category": "Travel",
+    "isSaleOn": true
+  }
+]

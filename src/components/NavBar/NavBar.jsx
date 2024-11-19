@@ -14,7 +14,7 @@ const NavBar = () => {
         <li><NavLink className='py-1 px-3' to="/about-dev"><LiaConnectdevelop />About Dev</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 w-11/12 mx-auto">
+        <div className="navbar bg-base-100 w-11/12 mx-auto px-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -37,7 +37,7 @@ const NavBar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost text-xl">Discount PRO</Link>
+                <Link to='/' className="font-bold text-xl">Discount PRO</Link>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1 gap-2">

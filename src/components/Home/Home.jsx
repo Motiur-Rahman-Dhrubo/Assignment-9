@@ -1,9 +1,17 @@
+import AvailableCountries from "../AvailableCountries/AvailableCountries";
+import Faq from "../Faq/Faq";
+import OnSell from "../OnSell/OnSell";
 import Slider from "../Slider/Slider";
+import TopBrands from "../TopBrands/TopBrands";
 
 const Home = () => {
     return (
-        <div className='bg-[url(/assets/bg.png)] bg-no-repeat bg-center bg-cover bg-fixed'>
+        <div>
             <Slider></Slider>
+            <TopBrands></TopBrands>
+            <OnSell></OnSell>
+            <AvailableCountries></AvailableCountries>
+            <Faq></Faq>
         </div>
     );
 };

@@ -4,7 +4,7 @@
     "brand_name": "TechGizmo",
     "rating": 4.5,
     "description": "Leading gadgets and electronics brand.",
-    "brand_logo": "https://example.com/techgizmo-logo.png",
+    "brand_logo": "https://i.ibb.co.com/DbcsFzV/Tech-Gizmo.png",
     "coupons": [
       {
         "coupon_code": "TG50OFF",
@@ -58,27 +58,13 @@
     "brand_name": "FashionHub",
     "rating": 4.8,
     "description": "Trendy and affordable fashion for all.",
-    "brand_logo": "https://example.com/fashionhub-logo.png",
+    "brand_logo": "https://i.ibb.co.com/sjYVPGz/Fashion-Hub.png",
     "coupons": [
       {
         "coupon_code": "FH20",
         "description": "Flat 20% off on all items.",
         "expiry_date": "2024-11-25",
         "condition": "No minimum purchase required.",
-        "coupon_type": "Discount"
-      },
-      {
-        "coupon_code": "FHBULK",
-        "description": "Extra 10% off on bulk orders.",
-        "expiry_date": "2024-12-15",
-        "condition": "Applicable on orders above $300.",
-        "coupon_type": "Bulk Discount"
-      },
-      {
-        "coupon_code": "FHACCESSORY",
-        "description": "25% off on accessories.",
-        "expiry_date": "2024-12-20",
-        "condition": "Accessories only.",
         "coupon_type": "Discount"
       },
       {
@@ -112,7 +98,7 @@
     "brand_name": "GourmetTreats",
     "rating": 4.3,
     "description": "Delicious and healthy snacks.",
-    "brand_logo": "https://example.com/gourmettreats-logo.png",
+    "brand_logo": "https://i.ibb.co.com/HCsYP3g/Gourmet-Treats.png",
     "coupons": [
       {
         "coupon_code": "GT15OFF",
@@ -166,7 +152,7 @@
     "brand_name": "FitnessPro",
     "rating": 4.7,
     "description": "Your partner in fitness and wellness.",
-    "brand_logo": "https://example.com/fitnesspro-logo.png",
+    "brand_logo": "https://i.ibb.co.com/0fhZwWv/Fitness-Pro.png",
     "coupons": [
       {
         "coupon_code": "FP10OFF",
@@ -220,7 +206,7 @@
     "brand_name": "BookNook",
     "rating": 4.9,
     "description": "Wide collection of books for all readers.",
-    "brand_logo": "https://example.com/booknook-logo.png",
+    "brand_logo": "https://i.ibb.co.com/hWS3H6T/BookNook.png",
     "coupons": [
       {
         "coupon_code": "BNREAD10",
@@ -267,7 +253,7 @@
     "brand_name": "HomeEssentials",
     "rating": 4.6,
     "description": "Everything you need for your home.",
-    "brand_logo": "https://example.com/homeessentials-logo.png",
+    "brand_logo": "https://i.ibb.co.com/5h37BZM/Home-Essentials.png",
     "coupons": [
       {
         "coupon_code": "HE20",
@@ -321,7 +307,7 @@
     "brand_name": "UrbanTravel",
     "rating": 4.4,
     "description": "Reliable travel gear and accessories.",
-    "brand_logo": "https://example.com/urbantravel-logo.png",
+    "brand_logo": "https://i.ibb.co.com/mztBsZs/Urban-Travel.png",
     "coupons": [
       {
         "coupon_code": "UT10OFF",

@@ -13,6 +13,7 @@ const Router = createBrowserRouter([
         path: "/",
         element: <Roots></Roots>,
         errorElement: <ErrorPage></ErrorPage>,
+        loader: () => fetch('/brands.json'),
         children: [
             {
                 path: "/",

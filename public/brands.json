@@ -3,7 +3,7 @@
     "_id": "1",
     "brand_name": "TechGizmo",
     "rating": 4.5,
-    "description": "Leading gadgets and electronics brand.",
+    "description": "TechGizmo offers innovative gadgets and electronics with cutting-edge technology, ensuring high-quality and reliable products for modern lifestyles.",
     "brand_logo": "https://i.ibb.co.com/DbcsFzV/Tech-Gizmo.png",
     "coupons": [
       {
@@ -57,7 +57,7 @@
     "_id": "2",
     "brand_name": "FashionHub",
     "rating": 4.8,
-    "description": "Trendy and affordable fashion for all.",
+    "description": "FashionHub delivers trendy, affordable, and quality fashion apparel and accessories for everyone, making style accessible to all customers.",
     "brand_logo": "https://i.ibb.co.com/sjYVPGz/Fashion-Hub.png",
     "coupons": [
       {
@@ -97,7 +97,7 @@
     "_id": "3",
     "brand_name": "GourmetTreats",
     "rating": 4.3,
-    "description": "Delicious and healthy snacks.",
+    "description": "GourmetTreats specializes in healthy, delicious snacks, offering a range of products that cater to diverse tastes and dietary preferences.",
     "brand_logo": "https://i.ibb.co.com/HCsYP3g/Gourmet-Treats.png",
     "coupons": [
       {
@@ -151,7 +151,7 @@
     "_id": "4",
     "brand_name": "FitnessPro",
     "rating": 4.7,
-    "description": "Your partner in fitness and wellness.",
+    "description": "FitnessPro is your ultimate partner in achieving wellness, offering premium-quality fitness equipment, expert guidance, and tailored solutions for a healthier and more active lifestyle.",
     "brand_logo": "https://i.ibb.co.com/0fhZwWv/Fitness-Pro.png",
     "coupons": [
       {
@@ -205,7 +205,7 @@
     "_id": "5",
     "brand_name": "BookNook",
     "rating": 4.9,
-    "description": "Wide collection of books for all readers.",
+    "description": "BookNook offers an expansive collection of books for all genres, ensuring readers of all ages find the perfect title to inspire and entertain them.",
     "brand_logo": "https://i.ibb.co.com/hWS3H6T/BookNook.png",
     "coupons": [
       {
@@ -252,7 +252,7 @@
     "_id": "6",
     "brand_name": "HomeEssentials",
     "rating": 4.6,
-    "description": "Everything you need for your home.",
+    "description": "HomeEssentials provides high-quality, reliable, and stylish products designed to enhance your home's functionality and aesthetics, meeting all your domestic needs effortlessly.",
     "brand_logo": "https://i.ibb.co.com/5h37BZM/Home-Essentials.png",
     "coupons": [
       {
@@ -306,7 +306,7 @@
     "_id": "7",
     "brand_name": "UrbanTravel",
     "rating": 4.4,
-    "description": "Reliable travel gear and accessories.",
+    "description": "UrbanTravel brings you durable and innovative travel gear and accessories, ensuring convenience, comfort, and style for all your adventures, whether short trips or long journeys.",
     "brand_logo": "https://i.ibb.co.com/mztBsZs/Urban-Travel.png",
     "coupons": [
       {

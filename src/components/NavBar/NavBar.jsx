@@ -18,8 +18,8 @@ const NavBar = () => {
         <Link to="/sign-up" className="btn">Sign up</Link>
     </>
     return (
-        <div className="navbar bg-base-100 w-11/12 mx-auto px-0">
-            <div className="navbar-start">
+        <div className="navbar w-11/12 mx-auto px-0">
+            <div className="navbar-start md:w-1/2 w-full">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
                         <svg

@@ -7,6 +7,7 @@ import Home from "../components/Home/Home";
 import Brands from "../components/Brands/Brands";
 import MyProfile from "../components/MyProfile/MyProfile";
 import AboutDev from "../components/AboutDev/AboutDev";
+import ExpectedBrand from "../components/ExpectedBrand/ExpectedBrand";
 
 const Router = createBrowserRouter([
     {
@@ -30,6 +31,13 @@ const Router = createBrowserRouter([
             {
                 path: "/about-dev",
                 element: <AboutDev></AboutDev>,
+            },
+            {
+                path: "/brand/:id",
+                element: <ExpectedBrand></ExpectedBrand>,
+                loader: ({ params }) => fetch('/brands.json')
+                .then(res => res.json())
+                .then(brands => brands.find(brand => brand._id === params.id))
             },
         ],
     },

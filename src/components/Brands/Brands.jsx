@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { BrandsDataContext } from "../Roots/Roots";
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 const Brands = () => {
 
@@ -57,9 +58,9 @@ const Brands = () => {
                             <div className="border-l md:w-4/12 w-full pl-4">
                                 {brand.isSaleOn ? (
                                     <div className="flex flex-col h-full justify-center gap-2 items-start">
-                                        <button className="btn">
+                                        <Link to={`/brand/${brand._id}`} className="btn">
                                             View Coupons
-                                        </button>
+                                        </Link>
                                         <h2 className="text-xl font-bold text-green-400">
                                             Sale is On
                                         </h2>

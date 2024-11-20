@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="backdrop-blur-sm border-b border-white bg-[rgba(255,255,255,0.1)] mt-14 rounded-t-3xl border">
+        <footer className="backdrop-blur-sm border-white bg-[rgba(255,255,255,0.1)] mt-14 rounded-t-3xl border">
             <div className="w-11/12 mx-auto">
                 <div className="flex md:py-14 py-10 gap-4 flex-col md:flex-row">
                     <div className="md:w-1/2 w-full">

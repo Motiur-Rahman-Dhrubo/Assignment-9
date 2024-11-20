@@ -99,50 +99,7 @@
     "rating": 4.3,
     "description": "GourmetTreats specializes in healthy, delicious snacks, offering a range of products that cater to diverse tastes and dietary preferences.",
     "brand_logo": "https://i.ibb.co.com/HCsYP3g/Gourmet-Treats.png",
-    "coupons": [
-      {
-        "coupon_code": "GT15OFF",
-        "description": "15% off on all gourmet snacks.",
-        "expiry_date": "2025-01-01",
-        "condition": "Valid for first-time users.",
-        "coupon_type": "Discount"
-      },
-      {
-        "coupon_code": "GTBUY2",
-        "description": "Buy 2, get 1 free.",
-        "expiry_date": "2024-11-30",
-        "condition": "Applicable to select products only.",
-        "coupon_type": "Combo"
-      },
-      {
-        "coupon_code": "GTSHIPFREE",
-        "description": "Free shipping on orders above $50.",
-        "expiry_date": "2024-12-31",
-        "condition": "Minimum purchase of $50.",
-        "coupon_type": "Shipping"
-      },
-      {
-        "coupon_code": "GTPACKDEAL",
-        "description": "Save 20% on snack packs.",
-        "expiry_date": "2024-12-20",
-        "condition": "Applies to multipacks.",
-        "coupon_type": "Discount"
-      },
-      {
-        "coupon_code": "GTFRIENDS",
-        "description": "Refer a friend and both get $10 off.",
-        "expiry_date": "2025-01-01",
-        "condition": "Valid for referred users.",
-        "coupon_type": "Referral"
-      },
-      {
-        "coupon_code": "GTLOYALTY",
-        "description": "Extra 5% off for loyalty members.",
-        "expiry_date": "2025-01-01",
-        "condition": "Loyalty program users only.",
-        "coupon_type": "Loyalty Discount"
-      }
-    ],
+    "coupons": [],
     "shop_Link": "https://gourmettreats.com",
     "category": "Food",
     "isSaleOn": false
@@ -207,43 +164,7 @@
     "rating": 4.9,
     "description": "BookNook offers an expansive collection of books for all genres, ensuring readers of all ages find the perfect title to inspire and entertain them.",
     "brand_logo": "https://i.ibb.co.com/hWS3H6T/BookNook.png",
-    "coupons": [
-      {
-        "coupon_code": "BNREAD10",
-        "description": "Flat $10 off on purchases above $100.",
-        "expiry_date": "2024-12-01",
-        "condition": "Minimum purchase of $100.",
-        "coupon_type": "Discount"
-      },
-      {
-        "coupon_code": "BNFREESHIP",
-        "description": "Free shipping on all book orders.",
-        "expiry_date": "2024-11-30",
-        "condition": "No minimum purchase required.",
-        "coupon_type": "Shipping"
-      },
-      {
-        "coupon_code": "BNBULKBUY",
-        "description": "Buy 3 books, get 1 free.",
-        "expiry_date": "2024-12-20",
-        "condition": "Applicable to select titles only.",
-        "coupon_type": "Combo"
-      },
-      {
-        "coupon_code": "BNKIDS20",
-        "description": "20% off on kids' books.",
-        "expiry_date": "2025-01-01",
-        "condition": "Kids' books only.",
-        "coupon_type": "Category Discount"
-      },
-      {
-        "coupon_code": "BNLOYALTY",
-        "description": "Extra 5% off for loyalty program members.",
-        "expiry_date": "2025-01-01",
-        "condition": "Valid for loyalty card holders only.",
-        "coupon_type": "Loyalty Discount"
-      }
-    ],
+    "coupons": [],
     "shop_Link": "https://booknook.com",
     "category": "Books",
     "isSaleOn": false

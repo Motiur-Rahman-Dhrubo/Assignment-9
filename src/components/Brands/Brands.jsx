@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import 'animate.css';
 import { BrandsDataContext } from "../Roots/Roots";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
@@ -13,7 +14,7 @@ const Brands = () => {
     );
 
     return (
-        <div className="w-11/12 mx-auto lg:pt-4 md:pt-3 pt-2">
+        <div className="w-11/12 mx-auto lg:mt-4 md:mt-3 mt-2">
             <h2 className="lg:text-5xl md:text-3xl text-xl text-center font-bold">Explore Top Brands</h2>
 
             <div className="w-full flex justify-end lg:pt-4 md:pt-3 pt-2">
@@ -57,17 +58,17 @@ const Brands = () => {
                             </div>
                             <div className="border-l md:w-4/12 w-full pl-4">
                                 {brand.isSaleOn ? (
-                                    <div className="flex flex-col h-full justify-center gap-2 items-start">
+                                    <div className="flex flex-col h-full justify-center gap-8 items-start">
                                         <Link to={`/brand/${brand._id}`} className="btn">
                                             View Coupons
                                         </Link>
-                                        <h2 className="text-xl font-bold text-green-400">
+                                        <h2 className="text-xl font-bold text-green-400 animate__animated animate__bounce animate__slower animate__infinite">
                                             Sale is On
                                         </h2>
                                     </div>
                                 ) : (
                                     <div className="flex h-full items-center">
-                                        <h2 className="text-xl font-bold text-red-400">
+                                        <h2 className="text-xl font-bold text-red-600">
                                             Not Available Now
                                         </h2>
                                     </div>

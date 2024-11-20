@@ -7,7 +7,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const Slider = () => {
     return (
-        <div className='w-11/12 mx-auto slider-container lg:pt-4 md:pt-3 pt-2'>
+        <div className='w-11/12 mx-auto slider-container lg:mt-4 md:mt-3 mt-2'>
             <AutoplaySlider play={true} interval={3000} className='w-full aspect-[3/1]'>
                 <div className='w-full'><img src="/assets/discount-1.jpg" alt="discount img" className='w-full aspect-[3/1] rounded-3xl'/></div>
                 <div className='w-full'><img src="/assets/discount-2.jpg" alt="discount img" className='w-full aspect-[3/1] rounded-3xl'/></div>

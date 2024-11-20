@@ -2,6 +2,7 @@ import 'animate.css';
 import { useContext } from 'react';
 import Marquee from "react-fast-marquee";
 import { BrandsDataContext } from '../Roots/Roots';
+import { Link } from 'react-router-dom';
 
 const TopBrands = () => {
 
@@ -14,7 +15,7 @@ const TopBrands = () => {
                 <div className='flex justify-around'>
                     {
                         brands.map(brand => (
-                            <a href="#" key={brand._id}><img src={brand.brand_logo} alt="brand logo" className='lg:w-40 md:w-32 w-28 aspect-[7/4] rounded-lg mx-5' /></a>
+                            <Link href="#" to={`/brand/${brand._id}`} key={brand._id}><img src={brand.brand_logo} alt="brand logo" className='lg:w-40 md:w-32 w-28 aspect-[7/4] rounded-lg mx-5' /></Link>
                         ))
                     }
                 </div>

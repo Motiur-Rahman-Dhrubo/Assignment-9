@@ -1,38 +1,35 @@
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 const Footer = () => {
     return (
-        <footer className="w-full">
-            <div className="w-11/12 mx-auto py-20">
-                <div>
-                    <h3 className="text-[#09080F] text-3xl font-bold text-center">Gadget Heaven</h3>
-                    <p className="text-base font-medium text-[#6B6B6F] text-center mt-3">Leading the way in cutting-edge technology and innovation.</p>
-                    <hr className="my-8"/>
-                    <div className="w-8/12 mx-auto flex justify-between">
-                        <div className="text-center">
-                            <h3 className="text-[#09080F] text-lg font-bold">Services</h3>
-                            <ul className="mt-4 flex flex-col gap-2 text-base font-normal text-[#6B6B6F]">
-                                <li><a href="#">Product Support</a></li>
-                                <li><a href="#">Order Tracking</a></li>
-                                <li><a href="#">Shipping & Delivery</a></li>
-                                <li><a href="#">Returns</a></li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <h3 className="text-[#09080F] text-lg font-bold">Company</h3>
-                            <ul className="mt-4 flex flex-col gap-2 text-base font-normal text-[#6B6B6F]">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div className="text-center">
-                            <h3 className="text-[#09080F] text-lg font-bold">Legal</h3>
-                            <ul className="mt-4 flex flex-col gap-2 text-base font-normal text-[#6B6B6F]">
-                                <li><a href="#">Terms of Service</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Cookie Policy</a></li>
-                            </ul>
+        <footer className="backdrop-blur-sm border-b border-white bg-[rgba(255,255,255,0.1)] mt-14">
+            <div className="w-11/12 mx-auto">
+                <div className="flex py-14 gap-4 flex-col md:flex-row">
+                    <div className="md:w-1/2 w-full">
+                        <h2 className="text-4xl font-bold italic">Discount PRO</h2>
+                        <p className="text-lg font-normal pt-2">
+                            South Asia's largest discounts, offers, and cashback website.
+                        </p>
+                        <p className="text-lg font-normal">
+                            Founded in 2010.
+                        </p>
+                    </div>
+                    <div className="md:w-1/2 w-full">
+                        <h6 className="text-2xl font-semibold">Social links:</h6>
+                        <div className="flex gap-5 pt-4 text-3xl">
+                            <a href="https://www.facebook.com/md.motiur.rahman.383" target="_blank"><FaFacebook /></a>
+                            <a href="https://www.linkedin.com/in/md-motiur-rahman-105598318/" target="_blank"><FaLinkedin /></a>
+                            <a href="https://www.youtube.com/@ruitom.coder383" target="_blank"><FaYoutube /></a>
+                            <a href="https://github.com/Motiur-Rahman-Dhrubo" target="_blank"><FaGithub /></a>
                         </div>
                     </div>
+                </div>
+                <hr />
+                <div className="text-center py-5">
+                    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
                 </div>
             </div>
         </footer>

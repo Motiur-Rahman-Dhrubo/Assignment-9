@@ -13,6 +13,10 @@ const NavBar = () => {
         <li><NavLink className='py-1 px-3' to="/my-profile"><IoPersonCircle />My Profile</NavLink></li>
         <li><NavLink className='py-1 px-3' to="/about-dev"><LiaConnectdevelop />About Dev</NavLink></li>
     </>
+    const joining = <>
+        <Link to="/login" className="btn">Login</Link>
+        <Link to="/sign-up" className="btn">Sign up</Link>
+    </>
     return (
         <div className="navbar bg-base-100 w-11/12 mx-auto px-0">
             <div className="navbar-start">
@@ -37,16 +41,25 @@ const NavBar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to='/' className="font-bold text-xl">Discount PRO</Link>
+                <Link to='/' className="font-bold text-xl italic">Discount PRO</Link>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1 gap-2">
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end gap-2">
-                <Link to="/login" className="btn">Login</Link>
-                <Link to="/sign-up" className="btn">Sign up</Link>
+            <div className="navbar-end">
+                <div className='gap-2 hidden lg:flex'>
+                    {joining}
+                </div>
+                <div>
+                    <details className="dropdown block lg:hidden">
+                        <summary className="btn m-1">Join</summary>
+                        <ul className="menu dropdown-content bg-base-100 rounded-box z-[10] md:w-52 w-40 p-2 shadow gap-2 right-0">
+                            {joining}
+                        </ul>
+                    </details>
+                </div>
             </div>
         </div>
     );

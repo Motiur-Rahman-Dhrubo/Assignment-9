@@ -3,12 +3,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 const SignUp = () => {
 
     const { createNewUser, setUser, updateUserProfile, handleGoogleSignUp } = useContext(AuthContext);
 
     const [error, setError] = useState({});
+
+    const [showPassword, setShowPassword] = useState(false);
 
     const navigate = useNavigate();
 
@@ -111,11 +115,15 @@ const SignUp = () => {
                     </div>
 
                     {/* password-input */}
-                    <div className="form-control">
+                    <div className="form-control relative">
                         <label className="label">
                             <span className="label-text">Password*</span>
                         </label>
-                        <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                        <input type={showPassword ? "text" : "password"} name="password" placeholder="password" className="input input-bordered" required />
+                        <button onClick={(e) => { e.preventDefault(); setShowPassword(!showPassword); }}
+                            className="absolute right-4 top-[52px]">
+                            {showPassword ? <FaEyeSlash /> : <FaEye />}
+                        </button>
 
                         {error.password && (
                             <label className="label">

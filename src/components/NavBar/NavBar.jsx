@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
 import { TbBrandCodepen } from "react-icons/tb";
 import { IoPersonCircle } from "react-icons/io5";
 import { LiaConnectdevelop } from "react-icons/lia";
-
+import { AuthContext } from '../../provider/AuthProvider';
 
 const NavBar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+    
     const links = <>
         <li><NavLink className='py-1 px-3' to="/"><FaHome />Home</NavLink></li>
         <li><NavLink className='py-1 px-3' to="/brands"><TbBrandCodepen />Brands</NavLink></li>
@@ -48,19 +51,29 @@ const NavBar = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <div className='gap-2 hidden lg:flex'>
-                    {joining}
-                </div>
-                <div>
-                    <details className="dropdown block lg:hidden">
-                        <summary className="btn m-1">Join</summary>
-                        <ul className="menu dropdown-content bg-base-100 rounded-box z-[10] md:w-52 w-40 p-2 shadow gap-2 right-0">
-                            {joining}
-                        </ul>
-                    </details>
-                </div>
-            </div>
+            {
+                user ? (
+                    <div className="navbar-end gap-2">
+                        <h2>{user.email}</h2>
+                        <button className='btn' onClick={logOut}>Log Out</button>
+                    </div>
+                ):
+                (
+                        <div className="navbar-end">
+                            <div className='gap-2 hidden lg:flex'>
+                                {joining}
+                            </div>
+                            <div>
+                                <details className="dropdown block lg:hidden">
+                                    <summary className="btn m-1">Join</summary>
+                                    <ul className="menu dropdown-content bg-base-100 rounded-box z-[10] md:w-52 w-40 p-2 shadow gap-2 right-0">
+                                        {joining}
+                                    </ul>
+                                </details>
+                            </div>
+                        </div>
+                )
+            }
         </div>
     );
 };

@@ -39,15 +39,15 @@ const Router = createBrowserRouter([
                 .then(res => res.json())
                 .then(brands => brands.find(brand => brand._id === params.id))
             },
+            {
+                path: "/sign-up",
+                element: <SignUp></SignUp>,
+            },
+            {
+                path: "/login",
+                element: <Login></Login>,
+            },
         ],
-    },
-    {
-        path: "/sign-up",
-        element: <SignUp></SignUp>,
-    },
-    {
-        path: "/login",
-        element: <Login></Login>,
     },
 ]);
 

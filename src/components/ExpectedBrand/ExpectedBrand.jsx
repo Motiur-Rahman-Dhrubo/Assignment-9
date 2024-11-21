@@ -45,7 +45,7 @@ const ExpectedBrand = () => {
                     (<div className="mt-4 grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                         {
                             coupons.map(coupon => (
-                                <div className="p-3 border rounded-lg bg-white flex flex-col gap-2">
+                                <div key={coupon.coupon_code} className="p-3 border rounded-lg bg-white flex flex-col gap-2">
                                     <p><span className="font-medium">Coupon Type: </span>{coupon.coupon_type}</p>
                                     <p className="font-medium">Description:</p>
                                     <p>{coupon.description}</p>

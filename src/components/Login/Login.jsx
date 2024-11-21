@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext, useState } from "react";
 import { Link , useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { FaEye } from "react-icons/fa";
@@ -7,8 +7,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-
-    const emailRef = useRef();
 
     const { userLogin, setUser, handleGoogleSignUp } = useContext(AuthContext);
 
@@ -60,7 +58,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" ref={emailRef} name="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control relative">
                         <label className="label">
@@ -81,7 +79,7 @@ const Login = () => {
                         }
 
                         <label className="label">
-                            <Link to={"/forget-password"} state={{ email: emailRef.current?.value }} className="label-text-alt link link-hover">
+                            <Link to={"/forget-password"} className="label-text-alt link link-hover">
                                 Forgot password?
                             </Link>
                         </label>

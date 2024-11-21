@@ -8,6 +8,7 @@ import Brands from "../components/Brands/Brands";
 import MyProfile from "../components/MyProfile/MyProfile";
 import AboutDev from "../components/AboutDev/AboutDev";
 import ExpectedBrand from "../components/ExpectedBrand/ExpectedBrand";
+import PrivateRoute from "./PrivateRoute";
 
 const Router = createBrowserRouter([
     {
@@ -26,7 +27,9 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/my-profile",
-                element: <MyProfile></MyProfile>,
+                element: <PrivateRoute>
+                    <MyProfile></MyProfile>
+                </PrivateRoute>,
             },
             {
                 path: "/about-dev",
@@ -34,7 +37,9 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/brand/:id",
-                element: <ExpectedBrand></ExpectedBrand>,
+                element: <PrivateRoute>
+                    <ExpectedBrand></ExpectedBrand>
+                </PrivateRoute>, 
                 loader: ({ params }) => fetch('/brands.json')
                 .then(res => res.json())
                 .then(brands => brands.find(brand => brand._id === params.id))

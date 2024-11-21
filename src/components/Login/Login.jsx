@@ -1,10 +1,31 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link , useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 
 const Login = () => {
 
-    const { userLogin, setUser } = useContext(AuthContext)
+    const { userLogin, setUser, handleGoogleSignUp } = useContext(AuthContext);
+
+    const [error, setError] = useState({});
+
+    const location = useLocation();
+
+    const navigate = useNavigate();
+
+    const handleGoogleSignInClick = () => {
+        handleGoogleSignUp()
+            .then((result) => {
+                const user = result.user;
+                setUser(user);
+                navigate("/");
+            })
+            .catch((error) => {
+                toast.error(error.message, {
+                    position: "top-center",
+                    autoClose: 3000,
+                });
+            });
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,10 +36,9 @@ const Login = () => {
         userLogin(email, password).then((result) => {
             const user = result.user;
             setUser(user);
-        }).catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            alert(errorCode || errorMessage);
+            navigate(location?.state ? location.state : "/")
+        }).catch((err) => {
+            setError({ ...error, login:err.code })
         });
     }
 
@@ -38,6 +58,13 @@ const Login = () => {
                             <span className="label-text">Password</span>
                         </label>
                         <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                        {
+                            error.login && (
+                                <label className="label">
+                                    <p className="text-red-600">{error.login}</p>
+                                </label>
+                            )
+                        }
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
@@ -47,6 +74,7 @@ const Login = () => {
                     </div>
                     <p className="mt-2">Don't have an account? <Link to="/sign-up" className="link-hover text-blue-600">Sign Up</Link></p>
                 </form>
+                <button onClick={handleGoogleSignInClick} className="mx-8 btn btn-outline mb-8">Sign In with Google</button>
             </div>
         </div>
     );

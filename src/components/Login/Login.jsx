@@ -5,11 +5,8 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 
 const Login = () => {
-
-    const auth = getAuth();
 
     const emailRef = useRef();
 
@@ -53,26 +50,6 @@ const Login = () => {
         });
     }
 
-
-    const handleForgetPassword = () => {
-        const email = emailRef.current.value;
-        if (!email) {
-            toast.error("Input a valid Email", {
-                position: "top-center",
-                autoClose: 3000,
-            });
-        }
-        else {
-            sendPasswordResetEmail(auth, email)
-            .then(()=>{
-                toast.success("Password reset email sent to your Email", {
-                    position: "top-center",
-                    autoClose: 3000,
-                });
-            })
-        }
-    }
-
     return (
         <div className="flex flex-col w-11/12 mx-auto min-h-screen justify-center items-center lg:mt-4 md:mt-3 mt-2">
             <ToastContainer />
@@ -104,9 +81,9 @@ const Login = () => {
                         }
 
                         <label className="label">
-                            <a href="#" className="label-text-alt link link-hover" onClick={(e) => { e.preventDefault(); handleForgetPassword(); window.open("https://mail.google.com/", "_blank"); }} >
+                            <Link to={"/forget-password"} state={{ email: emailRef.current?.value }} className="label-text-alt link link-hover">
                                 Forgot password?
-                            </a>
+                            </Link>
                         </label>
 
                     </div>

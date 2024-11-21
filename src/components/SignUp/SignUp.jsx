@@ -16,7 +16,6 @@ const SignUp = () => {
 
     const navigate = useNavigate();
 
-
     const handleGoogleSignUpClick = () => {
         handleGoogleSignUp()
             .then((result) => {
@@ -75,6 +74,7 @@ const SignUp = () => {
             });
         });
     }
+
     return (
         <div className="flex flex-col w-11/12 mx-auto min-h-screen justify-center items-center lg:mt-4 md:mt-3 mt-2">
             <ToastContainer />
@@ -131,9 +131,6 @@ const SignUp = () => {
                             </label>
                         )}
 
-                        <label className="label">
-                            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                        </label>
                     </div>
 
                     <div className="form-control mt-6">

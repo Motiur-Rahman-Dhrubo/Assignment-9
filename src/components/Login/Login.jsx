@@ -1,12 +1,17 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link , useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 
 const Login = () => {
+
+    const auth = getAuth();
+
+    const emailRef = useRef();
 
     const { userLogin, setUser, handleGoogleSignUp } = useContext(AuthContext);
 
@@ -48,6 +53,26 @@ const Login = () => {
         });
     }
 
+
+    const handleForgetPassword = () => {
+        const email = emailRef.current.value;
+        if (!email) {
+            toast.error("Input a valid Email", {
+                position: "top-center",
+                autoClose: 3000,
+            });
+        }
+        else {
+            sendPasswordResetEmail(auth, email)
+            .then(()=>{
+                toast.success("Password reset email sent to your Email", {
+                    position: "top-center",
+                    autoClose: 3000,
+                });
+            })
+        }
+    }
+
     return (
         <div className="flex flex-col w-11/12 mx-auto min-h-screen justify-center items-center lg:mt-4 md:mt-3 mt-2">
             <ToastContainer />
@@ -58,7 +83,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" ref={emailRef} name="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control relative">
                         <label className="label">
@@ -77,9 +102,13 @@ const Login = () => {
                                 </label>
                             )
                         }
+
                         <label className="label">
-                            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                            <a href="#" className="label-text-alt link link-hover" onClick={(e) => { e.preventDefault(); handleForgetPassword(); window.open("https://mail.google.com/", "_blank"); }} >
+                                Forgot password?
+                            </a>
                         </label>
+
                     </div>
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Login</button>

@@ -1,13 +1,18 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
+import { AuthContext } from "../../provider/AuthProvider";
 
-const Login = () => {
+const ForgetPassword = () => {
 
     const auth = getAuth();
 
     const emailRef = useRef();
+
+    const { email } = useContext(AuthContext);
+
+    const loginEmail = email;
 
     const handleForgetPassword = () => {
         const email = emailRef.current.value;
@@ -38,7 +43,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" ref={emailRef} name="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" defaultValue={loginEmail} ref={emailRef} name="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control relative">
 
@@ -55,4 +60,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default ForgetPassword;

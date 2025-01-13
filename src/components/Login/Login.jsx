@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link , useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { FaEye } from "react-icons/fa";
@@ -8,7 +8,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
 
-    const { userLogin, setUser, handleGoogleSignUp } = useContext(AuthContext);
+    const emailRef = useRef();
+
+    const { userLogin, setEmail, setUser, handleGoogleSignUp } = useContext(AuthContext);
 
     const [error, setError] = useState({});
 
@@ -17,6 +19,11 @@ const Login = () => {
     const location = useLocation();
 
     const navigate = useNavigate();
+
+    const handleInputChange = () => {
+        const email = emailRef.current.value;
+        setEmail(email);
+    };
 
     const handleGoogleSignInClick = () => {
         handleGoogleSignUp()
@@ -58,7 +65,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" onChange={handleInputChange} ref={emailRef} name="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control relative">
                         <label className="label">

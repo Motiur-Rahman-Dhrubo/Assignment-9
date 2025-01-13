@@ -14,6 +14,8 @@ const AuthProvider = ({ children }) => {
 
     const googleProvider = new GoogleAuthProvider();
 
+    const [email, setEmail] = useState("");
+
     const createNewUser = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
@@ -52,6 +54,8 @@ const AuthProvider = ({ children }) => {
         loading,
         updateUserProfile,
         handleGoogleSignUp,
+        email,
+        setEmail,
     }
 
     useEffect(() => {
